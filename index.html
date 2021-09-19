@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <div>
+        <header>Welcome to your personal todo list </header>
+        <div>
+            <div class="action-panel">
+                <div class="search-section">
+                    <div><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="lightslategrey"></path></svg></div>
+                    <input type="text" name="search" placeholder="Search for todos">
+                </div>
+                <button class="add-btn" onclick="ShowAddTodo()"><i class="fas fa-plus"></i></button>
+            </div>
+            <div class="category-list">
+                <div class="category personal">
+                    <div class="category-icon"><i class="fas fa-user-secret" color="#ffba08"></i></div>
+                    <div class="category-text">
+                        <h3>Personal</h3>
+                        <p>Create todos that apply only to you as a person like your mental health, relationship life, personal care,etc.</p>
+                    </div>
+                </div>
+                <div class="category home">
+                    <div class="category-icon"><i class="fas fa-home"></i></div>
+                    <div class="category-text">
+                        <h3>Home</h3>
+                        <p>Create todos that specify things to be done around the house to keep you up-to-date at all times </p>
+                    </div>
+                </div>
+                <div class="category work">
+                    <div class="category-icon"><i class="fas fa-briefcase"></i></div>
+                    <div class="category-text">
+                        <h3>Work</h3>
+                        <p>Business related information can be very easy to forget. Create todos that apply to your business</p>
+                    </div>
+                </div>
+                <div class="category friends">
+                    <div class="category-icon"><i class="fas fa-users" ></i></div>
+                    <div class="category-text">
+                        <h3>Family/Friends</h3>
+                        <p>Remind yourself of those important family occasions, friends hangout and never miss a sorority meeting</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="todos" id="todos">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="./main.js"></script>
+</body>
+</html>
